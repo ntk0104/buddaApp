@@ -1,0 +1,3 @@
+rootProject.name = 'buddaApp'
+
+include ':app'
