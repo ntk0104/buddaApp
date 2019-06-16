@@ -7,6 +7,7 @@ const colors = {
     grayPrimary: '#BFBFBF',
     whitePrimary: '#fff',
     darkPrimary: '#000',
+    whiteTransPrimary: 'rgba(255,255,255,0.5)'
 }
 
 export default colors

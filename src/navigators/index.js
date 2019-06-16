@@ -9,12 +9,10 @@ import AuthLoadingScreen from '../views/AuthLoading'
 import AuthStack from '../views/Authentication';
 //MainStack
 import MainStack from '../views/Main'
-import MyView from '../views/myView'
 
 const AppNavigation = createSwitchNavigator({
     AuthLoading: AuthLoadingScreen, 
     Auth: AuthStack,
-    // Auth: MyView,
     Main: MainStack,
 
 }, {
