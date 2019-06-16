@@ -2,25 +2,6 @@ import React from 'react'
 import { StyleSheet, TextInput } from 'react-native'
 import { colors } from '../../utils'
 
-// export default props => {
-//     const { onChange, customStyle } = props
-//     console.log("Rendering TextInput with placeholder: " + props.placeholder)
-
-//     const handleOnChange = e => {
-//         onChange(e)
-//     }
-
-//     return (
-//         <TextInput
-//             {...props}
-//             underlineColorAndroid={'transparent'}
-//             style={[styles.textInput, customStyle]}
-//             onChangeText={handleOnChange}
-//             placeholderTextColor={colors.whiteTransPrimary}
-//         />
-//     )
-// }
-
 export default Input = React.memo((props) => {
     const { onChange, customStyle } = props
     console.log("Rendering TextInput with placeholder: " + props.placeholder)
@@ -39,7 +20,7 @@ export default Input = React.memo((props) => {
         />
     )
 }, (prevProps, newProps) => {
-    // only re-render if the props 'children' changed
+    // only re-render if the props 'placeholder' changed
     return prevProps.placeholder === newProps.placeholder
 })
 
